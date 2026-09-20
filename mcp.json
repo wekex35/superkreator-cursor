@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "superkreator": {
+      "url": "https://superkreator.com/api/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SUPERKREATOR_API_KEY}"
+      }
+    }
+  }
+}

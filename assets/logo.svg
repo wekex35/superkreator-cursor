@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="SuperKreator">
+  <rect width="128" height="128" rx="28" fill="#0B0B0F"/>
+  <defs>
+    <linearGradient id="sk-a" x1="24" y1="88" x2="104" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="0.55" stop-color="#DB2777"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <linearGradient id="sk-b" x1="20" y1="100" x2="96" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#sk-b)" d="M28 78c0-7 5.5-12.5 12.5-12.5h39c4.1 0 7.5 3.4 7.5 7.5s-3.4 7.5-7.5 7.5H48.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5H76c7 0 12.5 5.5 12.5 12.5S83 114 76 114H40.5C33.5 114 28 108.5 28 101.5V78z"/>
+  <path fill="url(#sk-a)" d="M100 50c0 7-5.5 12.5-12.5 12.5h-39c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5H79.5c2.5 0 4.5-2 4.5-4.5s-2-4.5-4.5-4.5H52c-7 0-12.5-5.5-12.5-12.5S45 14 52 14h35.5C94.5 14 100 19.5 100 26.5V50z"/>
+</svg>

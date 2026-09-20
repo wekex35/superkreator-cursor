@@ -1,0 +1,49 @@
+{
+  "name": "superkreator",
+  "displayName": "SuperKreator",
+  "version": "1.0.0",
+  "description": "Operate SuperKreator from Cursor \u2014 link in bio, UPI store, Instagram AutoDM, publish, planner, AI copy, analytics, and YouTube LIVE via hosted MCP and agent skills.",
+  "author": {
+    "name": "SuperKreator",
+    "email": "support@superkreator.com",
+    "url": "https://superkreator.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "superkreator",
+    "mcp",
+    "skills",
+    "creators",
+    "instagram",
+    "youtube",
+    "autodm",
+    "upi",
+    "india",
+    "social-media"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "agents",
+    "mcp",
+    "creators"
+  ],
+  "logo": "assets/logo.svg",
+  "homepage": "https://superkreator.com/agents",
+  "repository": "https://github.com/wekex35/superkreator-cursor",
+  "skills": "./skills/",
+  "commands": "./commands/",
+  "mcpServers": "./mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "SUPERKREATOR_API_KEY": {
+        "type": "string",
+        "title": "SuperKreator API key",
+        "description": "Scoped key from Settings \u2192 Agents (sk_live_... or sk_test_...). Scopes: read, write, publish, ai."
+      }
+    },
+    "required": [
+      "SUPERKREATOR_API_KEY"
+    ]
+  }
+}
