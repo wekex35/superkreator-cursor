@@ -1,70 +1,54 @@
-# SuperKreator — Cursor Plugin
+# SuperKreator — Agent Plugin (MCP + Skills)
 
-Operate [SuperKreator](https://superkreator.com) from Cursor: link in bio, UPI store, Instagram AutoDM, social publish, planner, AI copy, analytics, and YouTube LIVE — via hosted MCP tools (`sk_*`) and an agent skill.
+Operate [SuperKreator](https://superkreator.com) from Cursor, Claude, Codex, and other Agent Skills clients: link in bio, UPI store, Instagram AutoDM, social publish, planner, AI copy, analytics, and YouTube LIVE.
 
-## What's included
+## Install
 
-| Component | Path | Purpose |
-| --- | --- | --- |
-| MCP | `mcp.json` | Remote MCP at `https://superkreator.com/api/v1/mcp` |
-| Skill | `skills/superkreator/` | Workflows, guardrails, copy style |
-| Command | `commands/connect-superkreator.md` | `/connect-superkreator` setup walkthrough |
-| Stdio bridge | `bin/mcp-stdio.mjs` | Optional local bridge if you prefer stdio |
+### Cursor
+1. Install from [Cursor Marketplace](https://cursor.com/marketplace) when listed, or clone this repo into `~/.cursor/plugins/local/superkreator`
+2. Set `SUPERKREATOR_API_KEY` under Plugins → Configure
+3. Call `sk_whoami`
 
-## Install (after Marketplace listing)
-
-1. Open **Customize** in Cursor and install **SuperKreator**
-2. Create an API key at [Settings → Agents](https://superkreator.com/dashboard/settings#agents)
-3. Set `SUPERKREATOR_API_KEY` under **Plugins → SuperKreator → Configure**
-4. Ask the agent to call `sk_whoami`
-
-## Local test (before publish)
-
-From this directory:
-
+### Claude Code
 ```bash
-./scripts/install-local.sh
+claude plugin marketplace add wekex35/superkreator-cursor
+claude plugin install superkreator@superkreator-marketplace
+```
+Or submit path: use this public repo in the [Claude plugin directory](https://platform.claude.com/plugins/submit).
+
+### Remote MCP (any client)
+```text
+URL: https://superkreator.com/api/v1/mcp
+Header: Authorization: Bearer sk_live_...
 ```
 
-Then reload Cursor (**Developer: Reload Window**) and confirm the plugin under Customize. Set the API key when prompted.
+Create keys at [Settings → Agents](https://superkreator.com/dashboard/settings#agents).
 
-Manual install:
+### Codex / ChatGPT
+Submit the production MCP URL + skills from this repo via the [OpenAI Plugins portal](https://developers.openai.com/plugins/build/plugins).
 
-```bash
-mkdir -p ~/.cursor/plugins/local
-rm -rf ~/.cursor/plugins/local/superkreator
-cp -R . ~/.cursor/plugins/local/superkreator
-```
+## Package layout
 
-## Manual MCP (without plugin)
+| Path | Client |
+| --- | --- |
+| `.cursor-plugin/plugin.json` | Cursor |
+| `.claude-plugin/plugin.json` | Claude Code / Cowork |
+| `.codex-plugin/plugin.json` | Codex compatibility |
+| `plugin.json` | Agent Plugins open standard |
+| `mcp.json` / `.mcp.json` | Hosted MCP |
+| `skills/` | Agent Skills |
 
-```json
-{
-  "mcpServers": {
-    "superkreator": {
-      "url": "https://superkreator.com/api/v1/mcp",
-      "headers": {
-        "Authorization": "Bearer sk_live_..."
-      }
-    }
-  }
-}
-```
+## Privacy
 
-Stdio alternative:
-
-```bash
-SUPERKREATOR_API_KEY=sk_live_... node bin/mcp-stdio.mjs
-```
+- Workspace-scoped API keys only — no cross-tenant access
+- Privacy policy: https://superkreator.com/privacy
+- Support: support@superkreator.com
 
 ## Links
 
 - Product: https://superkreator.com
 - Agents: https://superkreator.com/agents
 - OpenAPI: https://superkreator.com/api/v1/openapi.json
-- Docs: https://superkreator.com/docs/28-agents-api
-- Support: support@superkreator.com
+- Skill (hosted): https://superkreator.com/agents/skill.md
 
-## Publish
-
-See [SUBMISSION.md](./SUBMISSION.md) for marketplace packaging and the submit form.
+See [PUBLISHING.md](./PUBLISHING.md) for marketplace status.

@@ -1,0 +1,18 @@
+{
+  "name": "superkreator-marketplace",
+  "owner": {
+    "name": "Graphity Technology Private Limited",
+    "email": "support@superkreator.com"
+  },
+  "metadata": {
+    "description": "Official SuperKreator agent plugins (MCP + skills)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "superkreator",
+      "source": "./",
+      "description": "SuperKreator creator OS — MCP tools and agent skill"
+    }
+  ]
+}

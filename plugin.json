@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "superkreator",
+  "version": "1.0.0",
+  "description": "Operate SuperKreator from your agent — link in bio, UPI store, Instagram AutoDM, publish, planner, AI copy, analytics, and YouTube LIVE via hosted MCP and agent skills.",
+  "author": {
+    "name": "Graphity Technology Private Limited",
+    "email": "support@superkreator.com",
+    "url": "https://superkreator.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "superkreator",
+    "mcp",
+    "skills",
+    "creators",
+    "instagram",
+    "youtube",
+    "india"
+  ],
+  "homepage": "https://superkreator.com/agents",
+  "repository": "https://github.com/wekex35/superkreator-cursor"
+}

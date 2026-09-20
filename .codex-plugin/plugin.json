@@ -1,0 +1,13 @@
+{
+  "name": "superkreator",
+  "version": "1.0.0",
+  "description": "Operate SuperKreator from Codex / ChatGPT — link in bio, UPI store, Instagram AutoDM, publish, planner, AI copy, analytics, and YouTube LIVE via hosted MCP and agent skills.",
+  "author": {
+    "name": "Graphity Technology Private Limited",
+    "email": "support@superkreator.com"
+  },
+  "homepage": "https://superkreator.com/agents",
+  "repository": "https://github.com/wekex35/superkreator-cursor",
+  "license": "MIT",
+  "keywords": ["superkreator", "mcp", "creators", "instagram", "youtube", "india"]
+}
