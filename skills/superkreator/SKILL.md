@@ -40,12 +40,14 @@ Canonical skill: `https://superkreator.com/agents/skill.md`
 
 ## Guardrails
 
+- Every MCP/API call is scoped to the workspace that owns the API key. You cannot read or change another creator's data by passing their ids.
 - Do not change usernames via API.
 - Do not invent Cashfree payouts, refunds, or disconnect OAuth.
 - LIVE slots are read-only here; starting a 24×7 stream stays in the dashboard.
 - Free plan: 3 products, 30 AI credits/month, 60 API calls/hour.
 - If a tool says the key is missing a scope, tell the user to create a new key with that scope.
 - Always human-edit prices, delivery URLs, and DM copy before marking a product ACTIVE or an AutoDM ACTIVE.
+- Never print the full API key. Never ask for another user's key or workspace id.
 
 ## Copy style
 
