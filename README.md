@@ -52,4 +52,6 @@ Submit the production MCP URL + skills from this repo via the [OpenAI Plugins po
 - Skill (hosted): https://superkreator.com/agents/skill.md
 - Smithery: https://smithery.ai/servers/graphity/superkreator
 
+[![Smithery badge](./assets/smithery-badge.svg)](https://smithery.ai/servers/graphity/superkreator)
+
 See [PUBLISHING.md](./PUBLISHING.md) for marketplace status.
