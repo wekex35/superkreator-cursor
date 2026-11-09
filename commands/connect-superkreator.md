@@ -10,7 +10,10 @@ Help the user finish plugin setup:
 1. Open https://superkreator.com/dashboard/settings#agents
 2. Create a key with the scopes they need (`read`, `write`, `publish`, `ai`)
 3. Paste it into Cursor under **Plugins → SuperKreator → Configure** as `SUPERKREATOR_API_KEY`
-4. Call `sk_whoami` to confirm the workspace
-5. Call `sk_get_credits` and report remaining AI credits
+4. Call `sk_version` to confirm the connected endpoint
+5. Call `sk_whoami` to confirm the workspace
+6. Call `sk_get_credits` and report remaining AI credits
 
 If auth fails, ask them to recreate the key and confirm they copied the full `sk_live_...` / `sk_test_...` token once.
+
+If lead magnet or AutoDM tools are missing from the tool list, ask them to reload the window so MCP refreshes.

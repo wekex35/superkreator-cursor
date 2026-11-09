@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "superkreator",
-  "version": "1.0.0",
-  "description": "Operate SuperKreator from your agent — link in bio, UPI store, Instagram AutoDM, publish, planner, AI copy, analytics, and YouTube LIVE via hosted MCP and agent skills.",
+  "version": "1.1.0",
+  "description": "Operate SuperKreator from your agent — link in bio, UPI store, Instagram AutoDM, lead magnets, publish, planner, AI copy, AI Influencer, Faceless Reels, analytics, and YouTube LIVE via hosted MCP and agent skills.",
   "author": {
     "name": "Graphity Technology Private Limited",
     "email": "support@superkreator.com",
@@ -16,6 +16,10 @@
     "creators",
     "instagram",
     "youtube",
+    "autodm",
+    "lead-magnets",
+    "faceless",
+    "ai-influencer",
     "india"
   ],
   "homepage": "https://superkreator.com/agents",

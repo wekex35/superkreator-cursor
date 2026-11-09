@@ -1,13 +1,13 @@
 # SuperKreator — Agent Plugin (MCP + Skills)
 
-Operate [SuperKreator](https://superkreator.com) from Cursor, Claude, Codex, and other Agent Skills clients: link in bio, UPI store, Instagram AutoDM, social publish, planner, AI copy, analytics, and YouTube LIVE.
+Operate [SuperKreator](https://superkreator.com) from Cursor, Claude, Codex, and other Agent Skills clients: link in bio, UPI store, Instagram AutoDM, lead magnets, social publish, planner, AI copy, AI Influencer, Faceless Reels, analytics, and YouTube LIVE.
 
 ## Install
 
 ### Cursor
 1. Install from [Cursor Marketplace](https://cursor.com/marketplace) when listed, or clone this repo into `~/.cursor/plugins/local/superkreator`
 2. Set `SUPERKREATOR_API_KEY` under Plugins → Configure
-3. Call `sk_whoami`
+3. Call `sk_version`, then `sk_whoami`
 
 ### Claude Code
 ```bash

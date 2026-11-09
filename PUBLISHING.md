@@ -3,6 +3,7 @@
 Repo: https://github.com/wekex35/superkreator-cursor  
 Org: Graphity Technology Private Limited · handle `@graphity`  
 MCP: `https://superkreator.com/api/v1/mcp`  
+Plugin version: `1.1.0` (lead magnets + AutoDM destinations + full tool catalog in skills)  
 Privacy: https://superkreator.com/privacy  
 Support: support@superkreator.com
 
